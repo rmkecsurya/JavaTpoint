@@ -4,11 +4,17 @@ public class ControlStatements {
 
 	public static void main(String[] args) {
 		// Decision making using if else
+		/**
+		 * it return either true or false
+		 */
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a value1");
 		int a = sc.nextInt();
 		System.out.println("Enter a value2");
 		int b = sc.nextInt();
+		/**
+		 * Simple if else lader
+		 */
 		if(a>b)
 			System.out.println("Value 1 is greater");
 		else
@@ -28,6 +34,15 @@ public class ControlStatements {
 		default:
 			System.out.println("default");
 		}
+		
+		//Looping Statements
+		/**
+		 * 1. Do-While loop
+		 * 2. While loop
+		 * 3. For loop
+		 * 4. For-each loop
+		 * 
+		 */
 		
 
 	}
