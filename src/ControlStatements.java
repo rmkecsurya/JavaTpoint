@@ -13,12 +13,33 @@ public class ControlStatements {
 		System.out.println("Enter a value2");
 		int b = sc.nextInt();
 		/**
-		 * Simple if else lader
+		 * Simple if else ladder
 		 */
 		if(a>b)
 			System.out.println("Value 1 is greater");
 		else
 			System.out.println("Value 2 is greater");
+		
+		/**
+		 * if else if statements
+		 */
+		if(a>b)
+			System.out.println("Value 1 is greater");
+		else if(a==b)
+			System.out.println("Equal Values");
+		else if(a<b)
+			System.out.println("Value 2 is greater");
+		
+		if(a>b)
+			System.out.println("Value 1 is greater");
+		/*else if(a==b)
+			System.out.println("Equal Values");*/
+		else if(a<b)
+			System.out.println("Value 2 is greater");
+		else
+			System.out.println("Else Statement");
+		
+		
 		
 		// Decision making statements using Switch
 		switch(a) {
