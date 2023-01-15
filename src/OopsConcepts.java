@@ -21,8 +21,20 @@ public class OopsConcepts {
 		
 		subclass sc = new subclass();
 		sc.eat();
+		FinalClass a1=new FinalClass("Surya");
+		FinalClass a2=new FinalClass("geetha");
+		FinalClass a3=new FinalClass("nagaraj");
+	
 		
 		
+	}
+}
+
+class FinalClass{
+	final String s;
+	public FinalClass(String s) {
+		this.s =s;
+		System.out.println(this.s);
 	}
 }
 
@@ -61,3 +73,4 @@ class Superclass{
 class subclass extends Superclass{
 	void bark(){System.out.println("barking...");}  
 }
+
