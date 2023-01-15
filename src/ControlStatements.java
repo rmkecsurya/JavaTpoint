@@ -66,8 +66,34 @@ public class ControlStatements {
 		 * 4. For-each loop
 		 * 
 		 */
+		// For loop
+		for(int i=0;i<10;i++) {
+			System.out.print(i+ " ");
+		}
+		System.out.println();
+		String s="Suryanagarajgeetha";
+		// For-Each loop
+		for(char i : s.toCharArray()) {
+			System.out.print(i+" ");
+		}
+		System.out.println();
+		int i=0;
+		//While loop
+		while(i<10) {
+			System.out.print(i+" ");
+			i++;
+		}
+		System.out.println();
 		
-
+		//Do-While loop
+		int i1=0;
+		do {
+			System.out.println(i1+": times");
+		}while(i1>1);
+		
+		//Ternary Operator
+		String output = (i%2==0)?"Even":"odd";
+		System.out.println(output);
 	}
 
 }
