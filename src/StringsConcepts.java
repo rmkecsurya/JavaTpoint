@@ -88,6 +88,21 @@ public class StringsConcepts {
 		
 		
 		
+		/**
+		 * String buffer is used to create the mutable string objects
+		 *  1. StringBuffer() creates a empty string buffer
+		 *  2. StringBuffer(String str) crates a stringbuffer with the specified string
+		 *  3. StringBuffer(int capacity)	It creates an empty String buffer with the specified capacity as length.
+		 */
+		
+		String str7 = "This is string buffer";
+		StringBuffer strBuff = new StringBuffer(str7);
+		strBuff.append(" appendedStriing");
+		System.out.println(strBuff);
+		
+		
+		
+		
 	}
 
 }
