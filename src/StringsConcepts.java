@@ -1,3 +1,5 @@
+import java.util.regex.Pattern;
+import java.util.Arrays;
 
 public class StringsConcepts {
 
@@ -86,7 +88,11 @@ public class StringsConcepts {
 		System.out.println(s1.substring(3));
 		System.out.println(s2.substring(1,11));
 		
-		
+		String text= new String("Hello, My name is Sachin");
+		/* Splits the sentence by the delimeter passed as an argument */  
+        String[] sentences = text.split("\\.");  
+        System.out.println(Arrays.toString(sentences));
+
 		
 		/**
 		 * String buffer is used to create the mutable string objects
@@ -98,9 +104,29 @@ public class StringsConcepts {
 		String str7 = "This is string buffer";
 		StringBuffer strBuff = new StringBuffer(str7);
 		strBuff.append(" appendedStriing");
+		
+		/**
+		 * StringBuffer Methods
+		 * strBuff.append(string)
+		 * strBuff.insert(int index,string str)
+		 * strBuff.replace(int start,int end,string)
+		 * strBuff.delete(int start,int end)
+		 * strBuff.reverse()
+		 * strBuff.capacity() default is 16 if size increases (current*2)+2
+		 * 
+		 * String builder is same as string buffer expect buffer is syncronized and builder is non-syncronized
+		 * 
+		 */
 		System.out.println(strBuff);
 		
 		
+		/**
+		 * Java regex
+		 * 
+		 */
+		
+		System.out.println(Pattern.matches("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$", "Surya-n@gmail.co.in"));
+		System.out.println(Pattern.matches("\\d", "6565"));
 		
 		
 	}
