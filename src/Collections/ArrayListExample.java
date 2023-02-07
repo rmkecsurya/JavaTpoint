@@ -2,7 +2,6 @@ package Collections;
 
 import java.util.*;
 public class ArrayListExample {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -46,23 +45,33 @@ public class ArrayListExample {
 		// To sort the elements 
 		Collections.sort(list);
 		System.out.println(list);
-		Student s1=new Student(101,"Sonoo",23);  
-		Student s2=new Student(102,"Ravi",21);  
-		Student s3=new Student(103,"Hanumat",25);  
-		  //creating arraylist  
-		ArrayList<Student> al=new ArrayList<Student>();  
-		al.add(s1);//adding Student class object  
-		al.add(s2);  
-		al.add(s3);  
-	}
-	public class Student{  
-		  int rollno;  
-		  String name;  
-		  int age;  
-		  public Student(int rollno,String name,int age){  
-		   this.rollno=rollno;  
-		   this.name=name;  
-		   this.age=age;  
-		  }  
-		}  
+		Student s1 = new Student(101, "Surya", 25);
+		Student s2 = new Student(102,"geeths",323);
+		Student s3 = new Student(103,"Pavi",33);
+		ArrayList<Student> studentArrayList = new ArrayList<Student>();
+		studentArrayList.add(s1);
+		studentArrayList.add(s2);
+		studentArrayList.add(s3);
+		for(Student st : studentArrayList) {
+			System.out.println(st.age+" "+st.name+" "+st.rollno);
+		}
+		Iterator it = studentArrayList.iterator();
+		while(it.hasNext()) {
+			Student st = (Student)it.next();
+			System.out.println(st.age+" "+st.name+" "+st.rollno);
+		}
+		
+	} 
+	
 }
+class Student{  
+	  int rollno;  
+	  String name;  
+	  int age;  
+	  public Student(int rollno,String name,int age){  
+	   this.rollno=rollno;  
+	   this.name=name;  
+	   this.age=age;  
+	  }  
+	}
+
