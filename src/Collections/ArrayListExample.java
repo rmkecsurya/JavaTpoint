@@ -46,5 +46,23 @@ public class ArrayListExample {
 		// To sort the elements 
 		Collections.sort(list);
 		System.out.println(list);
+		Student s1=new Student(101,"Sonoo",23);  
+		Student s2=new Student(102,"Ravi",21);  
+		Student s3=new Student(103,"Hanumat",25);  
+		  //creating arraylist  
+		ArrayList<Student> al=new ArrayList<Student>();  
+		al.add(s1);//adding Student class object  
+		al.add(s2);  
+		al.add(s3);  
 	}
+	public class Student{  
+		  int rollno;  
+		  String name;  
+		  int age;  
+		  public Student(int rollno,String name,int age){  
+		   this.rollno=rollno;  
+		   this.name=name;  
+		   this.age=age;  
+		  }  
+		}  
 }
